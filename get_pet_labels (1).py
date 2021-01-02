@@ -49,9 +49,9 @@ def get_pet_labels(image_dir):
            pet_name = in_files[idx].split("_")
 
            for pet in pet_name:
-                if pet.isalpha():
-                    pet_label += pet + " "
-                    pet_label = pet_label.strip()
+               if pet.isalpha():
+                   pet_label += pet + " "
+           pet_label = pet_label.strip()
 
            if in_files[idx] not in results_dic:
               results_dic[in_files[idx]] = [pet_label.lower().strip()]
