@@ -1,0 +1,57 @@
+{
+  "name": "RobloxObby",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "GameManager": {
+        "$path": "src/ServerScriptService/GameManager.server.lua"
+      },
+      "CheckpointManager": {
+        "$path": "src/ServerScriptService/CheckpointManager.server.lua"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "OBbyClient": {
+          "$path": "src/StarterPlayerScripts/OBbyClient.client.lua"
+        }
+      }
+    },
+    "StarterGui": {
+      "$className": "StarterGui",
+      "OBbyGui": {
+        "$path": "src/StarterGui/OBbyGui.lua"
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "GameConfig": {
+        "$path": "src/ReplicatedStorage/GameConfig.lua"
+      },
+      "Events": {
+        "$className": "Folder",
+        "CheckpointReached": {
+          "$className": "RemoteEvent"
+        },
+        "PlayerDied": {
+          "$className": "RemoteEvent"
+        },
+        "StageCompleted": {
+          "$className": "RemoteEvent"
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "Stages": {
+        "$className": "Folder"
+      },
+      "Checkpoints": {
+        "$className": "Folder"
+      }
+    }
+  }
+}
